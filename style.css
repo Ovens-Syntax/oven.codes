@@ -8,6 +8,45 @@
   src: url('src/Fira_Code_v6.2/ttf/FiraCode-Light.ttf');
 }
 
+.icon-size {
+font-size: 2em;
+}
+
+.link-bar {
+text-align: center;
+justify-content: center;
+grid-template-columns: 5.5rem 5.5rem 5.5rem 5.5rem 5.5rem;
+}
+
+.album-grid {
+display: grid;
+grid-template-columns: auto auto auto auto auto;
+grid-gap: 1vw;
+margin: 0.5vw;
+}
+
+a {
+color: white;
+}
+
+.icon-btn {
+padding-top: 1em;
+padding-bottom: 1em;
+}
+
+a:hover {
+color: black;
+background-color: white;
+}
+
+.album-art {
+    display: block;
+    width: 18vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5vw;
+}
+
 body {
   background-color: var(--background);
   background-size: cover;
@@ -37,43 +76,36 @@ img {
   width: 90%;
 }
 
+@media only screen and (max-width: 500px) {
+a {
+font-size: 12px;
+}
+h2 {
+font-size: 50px;
+}
+.link-bar {
+grid-template-columns: 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem;
+}
+.album-grid {
+display: grid;
+grid-template-columns: auto auto auto;
+}
+}
+
 .grid {
 display: grid;
 }
-
-.article {
-  display: grid;
-  grid:
-  "image header" auto
-  "image  text" 1fr
-  / 1fr 1fr;
-  margin: 5% 20% 5% 20%;
-  padding: 1%;
-  border-color: var(--foreground);
-  border-width: 5px;
-  border-style: solid;
-}
-
-.header { grid-area: header; }
-.image { grid-area: image; }
-.text { grid-area: text; }
 
 .navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
-  height: 2rem;
-}
-
-.navbtn {
-  background-color: none;
-  color: var(--foreground);
-  cursor: pointer;
-  text-align: center;
-  border: none;
-  font-size: 1.5vw;
+  background-color: black;
+  border-style: solid;
+  border-width: 0rem 0rem 0.25rem 0rem;
+  border-color: white;
+  height: 2.75rem;
 }
 
 .center-box {
@@ -91,24 +123,9 @@ display: grid;
   margin-top: 2.5rem;
 }
 
-.pfp#side-menu-pfp {
-  border-radius: 50%;
-  border-color: var(--foreground);
-  border-width: 5px;
-  border-style: solid;
-  width: 100%; 
-  margin-top: 5%;
-}
-
 .link-cluster {
   display: grid;
   grid-template-columns: auto auto auto;
   font-size: 40px;
   gap: 10% 0;
-  margin: 0 10% 0 10%;
-}
-
-.side-menu {
-  margin-right: 75%;
-  display: none;
 }
