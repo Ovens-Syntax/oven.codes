@@ -114,8 +114,7 @@ padding: 2rem;
   border-color: var(--foreground);
   border-width: 5px;
   border-style: solid;
-  max-width: 40rem;
-  margin-top: 2.5rem;
+  max-width: 30em;
 }
 
 .link-cluster {
