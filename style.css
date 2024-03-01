@@ -19,6 +19,10 @@ justify-content: center;
 grid-template-columns: 5.5rem 5.5rem 5.5rem 5.5rem 5.5rem;
 }
 
+i {
+font-size: 2vh;
+}
+
 .album-grid {
 display: grid;
 grid-template-columns: auto auto auto auto auto;
@@ -129,8 +133,8 @@ align-items: left;
   border-color: var(--foreground);
   border-width: 5px;
   border-style: solid;
-  height: 60vh;
-  width: 60vh;
+  max-height: 60vh;
+  max-width: 60vh;
   margin-left: auto; 
   margin-right: auto; 
   margin-top: 2.5rem;
